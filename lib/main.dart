@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:hive/hive.dart';
 
 import 'package:base_design/routes/routes.dart';
 import 'package:base_design/utils/themes.dart';
-import 'package:base_design/core/datamodels/storage/db_datamodels.dart';
 
 void main() async {
-  Hive.registerAdapter(UserDataAdapter());
-  await Hive.openBox<UserData>(kUserDataKey);
-
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
