@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:base_design/utils/colors.dart';
 
 final appThemeDark = ThemeData(
